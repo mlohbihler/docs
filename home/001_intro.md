@@ -53,7 +53,7 @@ RUN cat hello
 #### Layers
 
 Behind the scenes, Layerfiles define a linear series of "layers" that stack on top of each other starting at the top of the Layerfile.
-After every 20 seconds, we'll snapshot all the files and processes in the VM and store them for later.
+Every 20 seconds we'll snapshot all the files and processes in the VM and store them for later.
 In practice, this means that we'll be able to avoid re-running repetitive steps like database migrations the next time 
 that you push code.
 
